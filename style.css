@@ -1,23 +1,12 @@
 @charset "UTF-8";
-/* 
-#c5ebd6
-#83e1ad
-#3ddc84
-#2fa866
-#1a5c37
-#063d1e
-*/
-
-
 @font-face {
-    font-family: "Android";
-    src: url("../fontes/idroid.otf") format("opentype");
-     font-weight: normal;
-
+    font-family: 'neon';
+    src: url(../fontes/Neon\ Android\ Italic.otf);
 }
-
-
-
+@font-face {
+    font-family: 'bebas';
+    src: url(../BebasNeue-Regular.ttf);
+}  
 :root {  
     color: #c5ebd6;
     color: #83e1ad
@@ -26,49 +15,48 @@
     color(srgb red green blue) #1a5c37
     color(srgb red green blue) #063d1e
 
-    --fonte-padrao: Arial, verdana, Helvetica,sans-serif;
+    
+     }
 
-    --fonte-destaque:"OFL";
-
-    --font-android:"Android, cursive;"
+ body{ 
+    background-color: #83e1ad;
+    font-family: 'bebas';
+    color: rgb(63, 53, 53);
  }
- body { 
-    background-color:#c5ebd6;
-    font-family:var(--fonte-padrao)
-}
-header {
+
+ header {
     background-color:#1a5c37;
 }
 
-header > h1{
-
- color: white;
- font-family:var(--fonte-destaque);
- 
+ header > h1{
+  color: white;
+  font-family: 'neon';
+  
 }
  header > p {
+    font-family: 'bebas';
  color: white;
     
 }
-nav {
+ nav {
     background-color: #063d1e;
 }
-main { background-color: white;
-
+ main { 
+    background-color: #c5ebd6;
    
 }
 
-main h1 {
-
-    color: #063d1e;
-    font-family: var(--font-android);
+ main h1 {
+    font-family: 'bebas';
+    color: rgb(51, 45, 45)
+    
 }
-main h2 {
+ main h2 {
 
-    font-family: var(--fonte-android);
+    font-family: 'bebas';
+    color: rgb(51, 45, 45);
 }
-footer{
-
+ footer{
 
     background-color: #063d1e;
     color: white;
