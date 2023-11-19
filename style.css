@@ -43,9 +43,13 @@
 }
  main { 
     background-color: #c5ebd6;
-   
+     min-width: 280px;
+     max-width: 800px;
+     margin: auto;
 }
-
+img {
+    width: 100%;
+}
  main h1 {
     font-family: 'bebas';
     color: rgb(51, 45, 45)
